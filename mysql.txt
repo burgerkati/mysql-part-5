@@ -1,0 +1,32 @@
+exercice 1
+
+USE webDevelopment;
+DESCRIBE languages;
+INSERT INTO `languages` (`language`, `version`)
+VALUES ('Javascript', '7'), ('Javascript', '8');
+exercice 2
+
+(to show versions of PHP and JavaScript)
+SELECT `version` FROM `languages` WHERE (language = 'PHP') OR (language = 'Javascript');
+
+exercice 3
+
+(to show rows that have nothing to do with PHP)
+SELECT * FROM `languages` WHERE (language != 'PHP');
+
+exercice 4
+
+(to display data in alphabetical order)
+SELECT * FROM `languages` ORDER BY language ASC;
+
+exercice 5
+
+(to delete table ide from webDelevopment database)
+DROP TABLE `ide`;
+(to add ajout.sql file)
+SOURCE path/to/ajout.sql;
+
+exercice 6
+
+(to show all rows with a date between 2010-01-01 and 2011-12-31)
+SELECT * FROM `ide` WHERE date BETWEEN '2010-01-01' AND '2011-12-31';
